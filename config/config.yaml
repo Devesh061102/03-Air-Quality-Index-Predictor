@@ -2,10 +2,10 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion # Root directory where data will be stored
-  secure_connect_bundle: C:/Users/hp/Documents/DS/astradatabase/secure-connect-air-quality-index-data.zip  # Path to the secure connect bundle for connecting to AstraDB
-  username: yylDrZUvgyIqKcyYXfioSyBF  # AstraDB username
-  password: 1d-GLPM9JugoDP0Zmf,oGMnU5DELJRQW1TW.ZgsP.IoWpS2npD6nmCWvoizPDD1eaiQ_cIZ_kaGHZAF0B6SccMPUwKLXuksRUXWzPT1xmzJBeNFv3w0bgZQseWnqw,R2  # AstraDB password
-  keyspace: data  # Keyspace in AstraDB
-  table_name: [aqdata1,aqdata2,aqdata3,aqdata4]  # List of Table name in AstraDB
+  secure_connect_bundle: C:/Users/hp/Documents/DS/astradatabase/secure-connect-aqi-data.zip  # Path to the secure connect bundle for connecting to AstraDB
+  username: gogOXMxiNGnZziCBjCkZbFlZ  # AstraDB username
+  password: li8EYpOotXP6yz-+i6.DLGhj0hdIJAaeZYjva+G7aZEryFIx3Il3a-T.MXKXGzqHeIT3PrHUSUu+TyU6FGD,wSM3sc74iJxYP8cFxL1Nw7q.EuWmoCY6un0S19OxSAjR  # AstraDB password
+  keyspace: aqidata  # Keyspace in AstraDB
+  table_name: table7  # List of Table name in AstraDB
   region_name: eu-west-1 # Region name in AstraDB
   output_file: artifacts/data_ingestion/data.csv # Path to save the downloaded data

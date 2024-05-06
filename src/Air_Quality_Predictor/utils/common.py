@@ -5,8 +5,32 @@ from Air_Quality_Predictor.logging import logger
 from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path
-from typing import Any
+from typing import Any,Callable
+from functools import wraps
 
+
+def ensure_annotations(func: Callable) -> Callable:
+    @wraps(func)
+    def wrapper(*args: Any, **kwargs: Any) -> Any:
+        return func(*args, **kwargs)
+    return wrapper
+
+@ensure_annotations
+def get_subindex(x: float, breakpoints: list) -> float:
+    if x <= breakpoints[0]:
+        return x * 50 / breakpoints[0]
+    elif x <= breakpoints[1]:
+        return 50 + (x - breakpoints[0]) * 50 / (breakpoints[1] - breakpoints[0])
+    elif x <= breakpoints[2]:
+        return 100 + (x - breakpoints[1]) * 100 / (breakpoints[2] - breakpoints[1])
+    elif x <= breakpoints[3]:
+        return 200 + (x - breakpoints[2]) * 100 / (breakpoints[3] - breakpoints[2])
+    elif x <= breakpoints[4]:
+        return 300 + (x - breakpoints[3]) * 100 / (breakpoints[4] - breakpoints[3])
+    elif x > breakpoints[4]:
+        return 400 + (x - breakpoints[4]) * 100 / (breakpoints[5] - breakpoints[4])
+    else:
+        return 0
 
 
 @ensure_annotations

@@ -2,7 +2,7 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion # Root directory where data will be stored
-  secure_connect_bundle: C:/Users/hp/Documents/DS/astradatabase/secure-connect-aqi-data.zip  # Path to the secure connect bundle for connecting to AstraDB
+  secure_connect_bundle: D:\ML-Projects\Database\secure-connect-aqi-data.zip  # Path to the secure connect bundle for connecting to AstraDB
   username: gogOXMxiNGnZziCBjCkZbFlZ  # AstraDB username
   password: li8EYpOotXP6yz-+i6.DLGhj0hdIJAaeZYjva+G7aZEryFIx3Il3a-T.MXKXGzqHeIT3PrHUSUu+TyU6FGD,wSM3sc74iJxYP8cFxL1Nw7q.EuWmoCY6un0S19OxSAjR  # AstraDB password
   keyspace: aqidata  # Keyspace in AstraDB

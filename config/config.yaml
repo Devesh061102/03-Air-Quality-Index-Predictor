@@ -29,8 +29,8 @@ data_collection:
 data_ingestion:
   root_dir: artifacts/data_ingestion # Root directory where data will be stored
   secure_connect_bundle: D:\ML-Projects\Database\secure-connect-aqi-data.zip  # Path to the secure connect bundle for connecting to AstraDB
-  username: username  # AstraDB username
-  password: password  # AstraDB password
+  username:  # AstraDB username
+  password:  # AstraDB password
   keyspace: aqidata  # Keyspace in AstraDB
   table_name: table_final  # List of Table name in AstraDB
   region_name: eu-west-1 # Region name in AstraDB
@@ -38,5 +38,5 @@ data_ingestion:
 
 data_transformation:
   root_dir: artifacts/data_transformation
-  data_path: artifacts/data_ingestion/air_pollutant_data.csv
+  data_path: artifacts/data_ingestion/data.csv
 

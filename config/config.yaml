@@ -2,7 +2,7 @@ artifacts_root: artifacts
 
 data_collection:
   root_dir: "artifacts/data_collection"
-  api_key: "your_api_key"
+  api_key: "902ff985f8412a5ff100f345bc71c096"
   
   # city_info = [
 #     {"city": "Mumbai", "lat": 19.0760, "lon": 72.8777},
@@ -32,11 +32,11 @@ data_ingestion:
   username: gogOXMxiNGnZziCBjCkZbFlZ  # AstraDB username
   password: li8EYpOotXP6yz-+i6.DLGhj0hdIJAaeZYjva+G7aZEryFIx3Il3a-T.MXKXGzqHeIT3PrHUSUu+TyU6FGD,wSM3sc74iJxYP8cFxL1Nw7q.EuWmoCY6un0S19OxSAjR  # AstraDB password
   keyspace: aqidata  # Keyspace in AstraDB
-  table_name: table7  # List of Table name in AstraDB
+  table_name: table_final  # List of Table name in AstraDB
   region_name: eu-west-1 # Region name in AstraDB
   output_file: artifacts/data_ingestion/data.csv # Path to save the downloaded data
 
 data_transformation:
   root_dir: artifacts/data_transformation
-  data_path: artifacts/data_ingestion/data.csv
+  data_path: artifacts/data_ingestion/air_pollutant_data.csv
 

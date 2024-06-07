@@ -17,6 +17,13 @@ data_collection:
 #     {"city": "Surat", "lat": 21.1702, "lon": 72.8311}
 # ]
 
+# cities_info = [
+#     {"city": "Thiruvananthapuram", "lat": 8.5241, "lon": 76.9366},
+#     {"city": "Patna", "lat": 25.5941, "lon": 85.1376},
+#     {"city": "Lucknow", "lat": 26.8467, "lon": 80.9462},
+#     {"city": "Chandigarh", "lat": 30.7333, "lon": 76.7794},
+#     {"city": "Bhopal", "lat": 23.2599, "lon": 77.4126}
+# ]
   city_info: 
     city: "Kolkata"
     lat: 22.5726
